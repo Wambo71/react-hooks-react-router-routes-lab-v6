@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-function NavBar() {
+export default function NavBar() {
   return (
     <nav className="navbar">
     
-    </nav>
-    );
-};
-
-export default NavBar;
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/directors">Directors</NavLink>
+      <NavLink to="/actors">Actors</NavLink>
+        </nav>
+      );
+    }
